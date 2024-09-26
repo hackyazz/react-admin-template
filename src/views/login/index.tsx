@@ -14,19 +14,22 @@ function Login() {
     let navigateTo = useNavigate();
     const onFinish = (values: any) => {
         // console.log('Received values of form: ', values);        
-        encodeLogin(values).then((res: any) => {
-            // console.log('login', res);
-            const {role} = res;
-            if(role == 0){
-                globalState.set({userInfo: role})
-            }
-            message.success(i18n._('login_success_msg')); // "登录成功"
-            localStorage.setItem('access-token', values.username);
-            navigateTo("/dashboard");
-        }).catch((err: any) => {
-            // console.error('login err:', err);
-            message.error(err.message);
-        })
+        // encodeLogin(values).then((res: any) => {
+        //     // console.log('login', res);
+        //     const {role} = res;
+        //     if(role == 0){
+        //         globalState.set({userInfo: role})
+        //     }
+        //     message.success(i18n._('login_success_msg')); // "登录成功"
+        //     localStorage.setItem('access-token', values.username);
+        //     navigateTo("/dashboard");
+        // }).catch((err: any) => {
+        //     // console.error('login err:', err);
+        //     message.error(err.message);
+        // })
+        message.success(i18n._('login_success_msg')); // "登录成功"
+        localStorage.setItem('access-token', values.username);
+        navigateTo("/dashboard");
     };
     // 前往注册页面
     const toRegister = () => {
@@ -47,7 +50,7 @@ function Login() {
                         className="login-form"
                         initialValues={{ remember: true }}
                         onFinish={onFinish}
-                        >
+                    >
                         <Form.Item
                             name="username"
                             rules={[{ required: true, message: i18n._('login_user_placeholder_msg') }]}
@@ -58,28 +61,28 @@ function Login() {
                             name="password"
                             rules={[{ required: true, message: i18n._('login_pwd_placeholder_msg') }]}
                         >
-                            <Input                           
-                            type="password"
-                            placeholder={i18n._('login_pwd_placeholder')}
+                            <Input
+                                type="password"
+                                placeholder={i18n._('login_pwd_placeholder')}
                             />
                         </Form.Item>
                         <Form.Item>
                             <Button icon={<LoginOutlined />} htmlType="submit" className="login-form-button">
                                 <Trans id="login_log">Log in</Trans>
                             </Button>
-                            
+
                         </Form.Item>
                     </Form>
                     <div>
                         <span className="login_register" onClick={toRegister}><Trans id="login_register">register now!</Trans></span>
                         {/* <span className="login_forgetpwd" onClick={toChangePwd}><Trans id="login_forget_pwd">Forgot password</Trans></span> */}
                         <span className="login-selectlang">
-                            <LangSelect position={"bottom"}/>
+                            <LangSelect position={"bottom"} />
                         </span>
-                        
+
                     </div>
                 </div>
-            </div>     
+            </div>
         </>
     )
 }
