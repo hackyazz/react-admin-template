@@ -1,0 +1,146 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2024-02-29 19:43+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: zh_CN\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/views/login/index.tsx:18
+msgid "login_success_msg"
+msgstr "登录成功"
+
+#. js-lingui-explicit-id
+#: src/App.tsx:20
+msgid "app_has_not_login"
+msgstr "您还没有登录，请登录后再访问！"
+
+#. js-lingui-explicit-id
+#: src/App.tsx:32
+msgid "app_has_login"
+msgstr "您已经登录过了！"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:33
+#: src/views/login/index.tsx:48
+#: src/views/register/index.tsx:43
+msgid "login_user_placeholder_msg"
+msgstr "请输入用户名"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:35
+#: src/views/login/index.tsx:50
+#: src/views/register/index.tsx:45
+msgid "login_user_placeholder"
+msgstr "用户名"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:39
+#: src/views/login/index.tsx:54
+#: src/views/register/index.tsx:49
+msgid "login_pwd_placeholder_msg"
+msgstr "请输入密码"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:43
+#: src/views/login/index.tsx:58
+#: src/views/register/index.tsx:53
+msgid "login_pwd_placeholder"
+msgstr "密码"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:48
+#: src/views/register/index.tsx:58
+msgid "register_pwd_placeholder_msg"
+msgstr "请再次输入密码"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:52
+#: src/views/register/index.tsx:70
+msgid "register_pwd_placeholder"
+msgstr "确认密码"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:57
+msgid "changepwd_log"
+msgstr " 修改密码"
+
+#. js-lingui-explicit-id
+#: src/views/changePwd/index.tsx:63
+#: src/views/register/index.tsx:87
+msgid "return_login"
+msgstr "返回登录"
+
+#. js-lingui-explicit-id
+#: src/views/home/index.tsx:9
+#: src/views/home/index.tsx:13
+msgid "home_test"
+msgstr "张三"
+
+#. js-lingui-explicit-id
+#: src/views/layout/header/index.tsx:16
+msgid "logout"
+msgstr "登出"
+
+#. js-lingui-explicit-id
+#: src/views/login/index.tsx:63
+msgid "login_log"
+msgstr " 登 入"
+
+#. js-lingui-explicit-id
+#: src/views/login/index.tsx:69
+msgid "login_register"
+msgstr "注册"
+
+#. js-lingui-explicit-id
+#: src/views/register/index.tsx:19
+msgid "register_success_msg"
+msgstr "注册成功"
+
+#. js-lingui-explicit-id
+#: src/views/register/index.tsx:64
+msgid "register_confirm_pwd_error"
+msgstr "两次输入密码不一致"
+
+#. js-lingui-explicit-id
+#: src/views/register/index.tsx:77
+msgid "login_email_placeholder"
+msgstr "邮箱"
+
+#. js-lingui-explicit-id
+#: src/views/register/index.tsx:81
+msgid "register_log"
+msgstr " 注册"
+
+#. js-lingui-explicit-id
+#: src/views/subscribe/components/card/index.tsx:30
+msgid "imme_subs"
+msgstr "立即订阅"
+
+#. js-lingui-explicit-id
+#: src/views/subscribe/index.tsx:11
+msgid "choose_plan"
+msgstr "请选择适合你的计划"
+
+#. js-lingui-explicit-id
+#: src/views/login/index.tsx:64
+#~ msgid "login_forget_pwd"
+#~ msgstr "忘记密码"
+
+#. js-lingui-explicit-id
+#: src/views/login/index.tsx:39
+#~ msgid "login_remember"
+#~ msgstr "记住用户"
+
+#. js-lingui-explicit-id
+#: src/views/login/index.tsx:51
+#~ msgid "login_or"
+#~ msgstr "或"

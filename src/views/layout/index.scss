@@ -1,0 +1,21 @@
+.demo-logo-vertical {
+    display: flex;
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 6px;
+    line-height: 32px;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+.main_layout{
+    min-height: 100%;
+
+    .layout-footer{
+        height: 20px;
+    }
+}

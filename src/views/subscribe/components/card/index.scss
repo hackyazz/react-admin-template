@@ -1,0 +1,86 @@
+.card-container {
+    min-height: 200px;
+    background-color: white;
+    padding-bottom: 15px;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    .card-title{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .card-subtitle{
+        background-color: #E9ECEF;
+        padding: 20px;
+        .card-price{
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .card-period{
+            font-size: 16px;
+            color: #6C757D;
+        }
+    }
+
+    .card-content{
+        padding: 10px;
+        
+        .card-item{
+            width: 100%;
+            color: black;
+            font-size: 16px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .card-button{
+        color: black;
+        background-color: #C0C6CC;
+        font-weight: bold;
+        margin-left: 10px;
+
+        &:hover{
+            color: black !important;
+            background-color: #898e92 !important;
+            border: 0 !important;
+        }
+
+        &:active{
+            border: 0 !important;
+        }
+
+        &:focus{
+            outline: 0 !important;
+        }
+    }
+
+    @-webkit-keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-5px);
+                  transform: translateY(-5px);
+        }
+      }
+      @keyframes slide-top {
+        0% {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+        }
+        100% {
+          -webkit-transform: translateY(-5px);
+                  transform: translateY(-5px);
+        }
+      }
+}
